@@ -74,9 +74,10 @@ end
  
   def turn
     token = current_player
-    puts "what is your move 1-9"
-    user_move = gets.chomp 
-    user_move = input_to_index(user_move)
+    if current_player == "X"
+      puts "what is your move 1-9"
+      user_move = gets.chomp 
+      user_move = input_to_index(user_move)
    
     if user_move <= 8 && valid_move?(user_move) == true 
       move(user_move, token)
