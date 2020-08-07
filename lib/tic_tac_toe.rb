@@ -152,12 +152,10 @@ end
     puts "Congratulations #{winner}!"
   else
     puts "Cat's Game!"
-=======
     if position_taken?(move) == true && move <= 8
       true
     else
       false
->>>>>>> 26c6e6ac4a59f25ff7cba0721838dbcca8c2013e
     end
   end
 end
