@@ -80,6 +80,8 @@ end
       user_move = input_to_index(user_move)
     else 
       puts "What is your move oh Great Ryan 1-9"
+      user_move = gets.chomp 
+      user_move = input_to_index(user_move)
    
     if user_move <= 8 && valid_move?(user_move) == true 
       move(user_move, token)
